@@ -7,7 +7,7 @@
             background-color: gray;  
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: Arial, sans-serif; /* Added for better text scaling */
         }
         .navbar {
             background-color: #333;
@@ -16,7 +16,7 @@
             display: flex;
             align-items: center;
             gap: 20px;
-            flex-wrap: wrap;
+            flex-wrap: wrap; /* Added to allow wrapping on smaller screens */
         }
 
         .nav-left, .nav-right {
@@ -75,7 +75,7 @@
             left: 8px;
             background-color: whitesmoke;
             padding: 20px;
-            overflow-y: auto;
+            overflow-y: auto; /* Added to allow scrolling if content overflows */
         }
 
         .sidebar-menu {
@@ -115,7 +115,7 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
             margin-left: 5%;
-            height: auto;
+            height: auto; /* Changed to auto for better responsiveness */
         }
 
         .content-box a {
@@ -127,23 +127,40 @@
             text-decoration: underline;
         }
 
+        /* Media Queries for Responsiveness */
         @media (max-width: 768px) {
-            .sidebar {
-                width: 100%;
-                position: relative;
-                margin: 0;
-            }
-
-            .main-content {
-                margin-left: 0;
+            body {
+                font-size: 16px; /* Increased base font size for better readability */
             }
 
             .navbar {
-                flex-direction: column;
+                flex-direction: column; /* Stack navbar items vertically */
+                padding: 10px; /* Adjusted padding for smaller screens */
+            }
+
+            .sidebar {
+                width: 100%; /* Full width on smaller screens */
+                position: relative; /* Change to relative for stacking */
+                margin: 0; /* Remove margin */
+                padding: 10px; /* Adjusted padding for smaller screens */
+            }
+
+            .main-content {
+                margin-left: 0; /* Remove left margin */
+                padding: 10px; /* Adjusted padding for smaller screens */
+            }
+
+            .content-box {
+                margin-left: 0; /* Remove left margin */
+                padding: 15px; /* Adjusted padding for smaller screens */
             }
 
             .circle-group {
-                justify-content: center;
+                justify-content: center; /* Center circle group */
+            }
+
+            .sidebar-menu li {
+                padding: 10px 5px; /* Adjusted padding for sidebar items */
             }
         }
     </style>
@@ -208,5 +225,3 @@
     </div>
 </body>
 </html>
-
-
