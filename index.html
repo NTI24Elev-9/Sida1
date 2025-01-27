@@ -1,199 +1,212 @@
 <!DOCTYPE html>
-	<html lang="en">
-	<head> 
-	<title>Webbsidan</title>
-    <script src="https://kit.fontawesome.com/a08d7fb1d8.js" crossorigin="anonymous"></script>	
+<html lang="en">
+<head>
+    <title>Math for Newbies</title>
     <style>
         body {
-            background-image: url('data:image/jpeg;base64,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');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
+            background-color: gray;  
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
-        .center-text {
-            text-align: center;
-            margin-top: 20px;
-            
-        }
-        
-       .box1 {
-        width: 300px;
-        height: 120px;
-        padding: 3px;
-        border: 5px solid blue;
-        margin-top: 100px;
-        margin-left:200px;
-        text-align: center;
-        background-color: red;
-
-}
-           
-        .box2 {
-        width: 350px;
-        height: 100px;
-        padding: 10px;
-        border: 10px solid green;
-        margin-top: auto;
-        margin-left: auto;
-        background-color: purple;
-        }
-
-       .text {
-
-        height: 35px;
-        width: 40px;
-        color: red;
-        font-size: 150px;
-        background-color: black;
-        
-       }
-
-        .nav-menu {
+        .navbar {
             background-color: #333;
-            padding: 15px;
-            text-align: center;
+            overflow: hidden;
+            padding: 10px 16px;
             display: flex;
-            justify-content: space-between;
-            padding: 15px 10%;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-left, .nav-right {
+            display: flex;
+            gap: 20px;
             align-items: center;
         }
 
-        .nav-menu a {
+        .nav-title {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .navbar a.text-link {
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
-            background-color: #444;
-            border-radius: 5px;
+            padding: 14px 16px;
         }
 
-        .nav-menu a:hover {
-            background-color: #555;
+        .navbar a.text-link:hover {
+            background-color: white;
+            color: black;
         }
 
-        .icons {
-            display: flex;
-            gap: 20px;
-            color: white;
+        .circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            overflow: hidden;
         }
 
-        .text {
-            font-size: 24px;
+        .circle:hover {
+            transform: scale(1.2);
         }
 
-        .flex-container-1 {
-            display: flex;
-            margin: 20px;
-            gap: 10px;
-        }
-
-        .flex-item-small {
-            background-color: palegreen;
-            padding: 20px;
-            flex: 1;
-        }
-
-        .flex-item-large {
-            background-color: lightblue;
-            padding: 20px;
-            flex: 4;
-        }
-
-        .flex-container-2 {
-            display: flex;
-            margin: 20px;
-            gap: 10px;
-            flex-direction: column
-        }
-
-        .flex-item-half {
-            background-color: red;
-            padding: 20px;
-            flex: 1;
-            flex-direction: column
-        }
-        
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-            background-color: green;
-            padding: 10px;
-        }
-        .grid-item {
-            background-color: lightgoldenrodyellow;
-            border: 1px solid black;
-            padding: 20px;
-            font-size: 30px;
-            text-align: center;
-        }
-        .grid-item img {
+        .circle img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        .circle-group {
+            display: flex;
+            gap: 10px;
+            margin-left: auto;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            left: 8px;
+            background-color: whitesmoke;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .sidebar-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar-menu li {
+            padding: 12px 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .sidebar-menu {
+            border-bottom: none;
+        }
+
+        .sidebar-menu a {
+            text-decoration: none;
+            color: black;
             display: block;
         }
 
-        .image-container {
-            background-image: url('https://www.shutterstock.com/image-photo/orange-cat-sits-looking-straight-600nw-2479857351.jpg');
+        .sidebar-menu a:hover {
+            color: lightslategray;
+        }
+
+        .main-content {
+            margin-left: 250px;
             padding: 20px;
-            margin: 20px;
-            min-height: 500px;
         }
 
-        .box3 {
-            width: 350px;
-            height: 100px;
-            padding: 10px;
-            border: 10px solid cyan;
-            background-color: gray;
-            text-align: center;
-            margin-left: 390px;
-            
+        .content-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            margin-left: 5%;
+            height: auto;
         }
 
+        .content-box a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .content-box a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                position: relative;
+                margin: 0;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+
+            .circle-group {
+                justify-content: center;
+            }
+        }
     </style>
 </head>
-	
-	<body>
-        <div class="nav-menu">
-            <a href="#">Option 1</a>
-            <a href="#">Option 2</a>
-            <div class="icons">
-                <i class="fas fa-cloud text"></i>
-                <i class="fas fa-rocket text"></i>
-            </div>
-            <a href="#">Option 3</a>
-            <a href="#">Option 4</a>
-        </div>
+<body>
+    <div class="navbar">
+        <a href="Login.html" class="text-link">Login</a>
+        <a href="#faq" class="text-link">FAQ</a>
+        <a href="#contact" class="text-link">Contact List</a>
+        <a href="#support" class="text-link">Support</a>
         
-        
-        
-        
-        <div class="center-text" style="font-family: 'Comic Sans MS', cursive;">Text</div>
-        <div class="box1" style="font-family: 'Comic Sans MS', cursive;"">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus molestias</div>
-        <div class="box2"style="font-family: 'Georgia', serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt voluptatibus ab. Nulla tenetur veniam magni quidem sequi, placeat architecto! Voluptatem alias, laboriosam nisi earum inventore harum. Dolorem, reprehenderit pariatur!</div>
-        
-        <div class="flex-container-1">
-            <div class="flex-item-small">Text</div>
-            <div class="flex-item-large">Text (4x större)</div>
-            <div class="flex-item-small">Text</div>
+        <div style="position: absolute; left: 40%;">
+            <img src="mathad.jpg" alt="Nav Logo" style="height: 50px; width: 200px;">
         </div>
 
-        <div class="flex-container-2">
-            <div class="flex-item-half">B</div>
-            <div class="flex-item-half">B</div>
+        <div style="position: absolute; left: 70%;">
+            <img src="wolfram.jpg" alt="Nav Logo" style="height: 50px; width: 200px;">
         </div>
-        
-        <div class="grid-container">
-            <div class="grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptates neque fuga doloribus recusandae ea quam, distinctio officiis vero quod corrupti ab vitae unde placeat atque dicta officia. Quis, ad.</div>
-            <div class="grid-item"><img src="https://www.shutterstock.com/image-photo/orange-cat-sits-looking-straight-600nw-2479857351.jpg" alt="Cat"></div>
-            <div class="grid-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, doloribus fugiat fugit architecto et ipsum facilis vitae eum. Repellat delectus quod quia quidem. Accusamus nihil unde temporibus officia molestiae eveniet?</div>
-            <div class="grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus consectetur ea, soluta repellendus, enim maiores dolorem accusantium sed id, voluptatem illum a suscipit quas veniam ullam nisi quaerat sunt.</div>
+
+        <div class="circle-group">
+            <a href="https://x.com/?lang=en&mx=2">
+                <div class="circle">
+                    <img src="C:\Users\airidas.gruzinskas\Desktop\Tutorial website\download.png" alt="Circle 1">
+                </div>
+            </a>
             
-          </div>
+            <a href="https://facebook.com">
+                <div class="circle">
+                    <img src="C:\Users\airidas.gruzinskas\Desktop\Tutorial website\facebook.png" alt="Circle 2">
+                </div>
+            </a>
+            
+            <a href="https://www.youtube.com/">
+                <div class="circle">
+                    <img src="C:\Users\airidas.gruzinskas\Desktop\Tutorial website\Youtube_logo.png" alt="Circle 3">
+                </div>
+            </a>
+        </div>
+    </div>
 
-          <div class="image-container"/div>
+    <div class="sidebar">
+        <ul class="sidebar-menu">
+            <li><a href="MainWebsite.html">Mathematics Basics</a></li>
+            <li><a href="Algebra.html">Algebra</a></li>
+            <li><a href="Geometry.html">Geometry</a></li>
+            <li><a href="Trigonometry.html">Trigonometry</a></li>
+            <li><a href="Calculus.html">Calculus</a></li>
+            <li><a href="Statistics.html">Statistics</a></li>
+            <li><a href="Propability.html">Probability</a></li>
+            <li><a href="Discretemath.html">Discrete Mathematics</a></li>
+            <li><a href="Linearalgebra.html">Linear Algebra</a></li>
+            <li><a href="numbertheory.html">Number Theory</a></li>
+            <li><a href="Mathematics Basics.html">Mathematical Logic</a></li>
+        </ul>
+    </div>
 
-         <h1 class="box3">lorem</h1>
-    </body>
-    </html>
-    
+    <div class="main-content">
+        <div class="content-box">
+            <h1>Welcome to the website where your math skills will eventually skyrocket</h1>
+            <p>Before you start, please click on the button log in or just click on <a href="Login.html">me</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+
