@@ -7,7 +7,7 @@
             background-color: gray;  
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif; 
+            font-family: Arial, sans-serif;
         }
         .navbar {
             background-color: #333;
@@ -16,7 +16,7 @@
             display: flex;
             align-items: center;
             gap: 20px;
-            flex-wrap: wrap; 
+            flex-wrap: wrap;
         }
 
         .nav-left, .nav-right {
@@ -75,7 +75,7 @@
             left: 8px;
             background-color: whitesmoke;
             padding: 20px;
-            overflow-y: auto; 
+            overflow-y: auto;
         }
 
         .sidebar-menu {
@@ -115,8 +115,7 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
             margin-left: 5%;
-            height: auto; 
-            
+            height: auto;
         }
 
         .content-box a {
@@ -128,39 +127,23 @@
             text-decoration: underline;
         }
 
-        /* Media Queries for Responsiveness */
         @media (max-width: 768px) {
-            body {
-                font-size: 16px;
-            }
-
-            .navbar {
-                flex-direction: column; 
-                padding: 10px;
-            }
-
             .sidebar {
                 width: 100%;
-                position: relative; 
-                margin: 0; 
-                padding: 10px; 
+                position: relative;
+                margin: 0;
             }
 
             .main-content {
-                margin-left: 0; 
-                padding: 10px; 
+                margin-left: 0;
+            }
 
-            .content-box {
-                margin-left: 0; 
-                padding: 15px; 
+            .navbar {
+                flex-direction: column;
             }
 
             .circle-group {
                 justify-content: center;
-            }
-
-            .sidebar-menu li {
-                padding: 10px 5px; 
             }
         }
     </style>
@@ -225,3 +208,5 @@
     </div>
 </body>
 </html>
+
+
